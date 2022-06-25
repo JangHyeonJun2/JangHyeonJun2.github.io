@@ -69,10 +69,10 @@ content:
               B2B 차량 이용, 관리 및 관제 서비스 Solution 서비스
           description: | # this will include new lines to allow paragraphs
             - 테스트 코드, 코드리뷰 개발환경 개선
-            - 테스트 코드 CI 도입
-            - 어드민 페이지 유지보수 및 개발
-            - Installer( 설치자 앱 ) 유지보수 및 개발
-            - [Bulk 엑셀 차량 등록 개발](https://jj-yi.tistory.com/62?category=936567)
+            - 테스트 코드 CI 도입 - <mark>GitAction, TestContainer 사용</mark>
+            - 어드민 페이지 유지보수 및 개발 
+            - Installer( 설치자 앱 ) 유지보수 및 개발 - <mark>설치이력 조회 시 여러 테이블 조인 쿼리에서 서브 쿼리로 변경 후 1.5초 → 0.9초 개선</mark>
+            - [Bulk 엑셀 차량 등록 개발](https://jj-yi.tistory.com/62?category=936567) - <marK>등록 속도 1.7초 → 0.2초 개선</mark>
         - layout: left
           title: 항해99 참여
           link: hanghae99.spartacodingclub.kr
@@ -108,12 +108,13 @@ content:
             - CCTV를 실시간으로 볼 수 있게 구현 및 현재 스트리밍되는 비디오를 NAS에 저장할 수 있게 프로젝트 개발
 
 
-  - title: Project
+  - title: 프로젝트
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: SFlash(Picture Spot)
+        link: github.com/JangHyeonJun2/picturespot
+        caption: 2021.04 ~ 05
         # link_text: Project Website
         additional_links:
           - title:  sproogen/modern-resume-theme
@@ -123,9 +124,92 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          지도와 함께 자신만의 스팟을 저장하고 공유하는 서비스<br><br>
+          ✔︎ HTTPS를 사용하면서 보안강화<br>
+          ✔ 게시물, 댓글 CRUD, 좋아요, 취소, 검색 기능구현<br>
+          ✔ 기존 FileZila 배포 → travis, s3, codeDepoly를 사용<br>
+              - <marK>무중단 CI/CD 구현</mark><br>
+          ✔ JPA 폐치조인을 사용하여 API 응답호출 최적화.<br>
+              - SELECT 쿼리 <marK>1.1초 → 0.9 ~ 1초 개선 </mark><br>
+          ✔ AWS s3 를 사용하여 이미지 List 업로드 및 삭제 개발<br>
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+      - layout: top-middle
+        title: Hanghae_Market
+        link: github.com/JangHyeonJun2/hanghae99_market
+        caption: 2021.04 ~ 04
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          중고 물건을 사고, 팔 수 있는 중고거래장터 프로젝트<br><br>
+          ✔︎ Socket 통신을 사용해서 1:1 대화기능 설계<br>
+          ✔︎ 채팅DB 설계<br>
+          ✔︎ STOMP 메세징 프로토콜 사용<br>
+          ✔︎ FileZila 프로그램으로 배포<br>
+        description: | # this will include new lines to allow paragraphs
+
+      - layout: top-middle
+        title: 당근마켓 클론코딩
+        link: github.com/JangHyeonJun2/CloneCoding_danggeon
+        caption: 2021.04 ~ 04
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          당근마켓을 벤치마킹하여 클론코딩 프로젝트<br><br>
+          ✔︎ Socket 통신을 사용해서 1:1 대화기능 설계<br>
+          ✔︎ 채팅DB 설계<br>
+          ✔︎ STOMP 메세징 프로토콜 사용<br>
+          ✔︎ FileZila 프로그램으로 배포<br>
+        description: | # this will include new lines to allow paragraphs
+
+      - layout: top-middle
+        title: 부동산 정보 스크래핑 프로그램
+        link: github.com/JangHyeonJun2/python_web_scrapper
+        caption: 2019.12 ~ 2020.01
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Python과 tor 라이브러리를 사용하여 특정 브라우저 정보 스크래핑 프로그램<br><br>
+          ✔︎ 특정 브라우저에서 스크래핑 지속적인 시도 시 ip블럭킹 되는 문제를 tor 라이브러리를 사용 <mark>(계속해서 ip주소가 변경되서 블럭킹을 피할 수 있음)</mark><br>
+        description: | # this will include new lines to allow paragraphs
+
+      - layout: top-middle
+        title: 교내 캡스톤
+        link: github.com/JangHyeonJun2/Capstone-Design_woosong
+        caption: 2019.09 ~ 12
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          교내 캡스토 디자인 대회에서 은상 수상<br><br>
+          ✔︎ 라즈베리파이로 주차장 현황 LCD표출<br>
+          ✔︎ 카카오 챗봇으로 주차장의 빈자리를 말해주는 프로그램 개발<br> 
+          ✔︎ T자 주차와 평행주차를 할 수 있는 프로그램 개발 → <mark>근거리 센서를 사용하여 개발</mark><br>
+        description: | # this will include new lines to allow paragraphs
+          
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
