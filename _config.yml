@@ -45,23 +45,76 @@ github_username:  JangHyeonJun2
 # google_analytics: "UA-00000000-0"
 
 # About Section
-about_title: Introduce
+about_title: 소개
 about_profile_image: images/myProfileIMG.jpg
 about_content: | # this will include new lines to allow paragraphs
- Java, Srping, AWS 기반의 1년차 백엔드 개발자 비즈니스 기능 개선, 어드민 페이지 개발, 유지보수 업무를 하였습니다. 
+ Java, Srping, AWS 기반의 1년차 백엔드 개발자입니다. 비즈니스 기능 개선, 어드민 페이지 개발, 유지보수 업무를 하였습니다. 
  현재는 OBD 통신으로 차량의 데이터를 가져와 차량관제, 차량제어, 운전자 운행 습관들을 제공하는 서비스를 개발 및 설계, 기능 개선을 주요 업무로 하고 있습니다.<br>
  클린한 코드와 개발 효율성을 중요하게 생각하며, 자동화에 관심이 많습니다. 코드 문제에 대해서는 집요하게 해결방법을 도출해내는 성격입니다. <br>
- <mark>테스트 코드</mark>와 <mark>코드리뷰</mark>를 당연시하며, 현 회사의 테스트 커버리지를 <mark>%</mark> 에서 <mark>%</mark>로 증가시켰으며, 모든 모듈의 테스트 케이스 자동화를 추가하였습니다. 
+ <mark>테스트 코드</mark>와 <mark>코드리뷰</mark>를 당연시하며, 현 회사의 테스트 커버리지를 <mark>%</mark> 에서 <mark>%</mark>로 증가시켰으며, 모든 모듈의 테스트 자동화를 하였습니다. 
   현재는 테스트코드 작성과 코드리뷰를 정착시키고 있으며, 관련 서적 <mark>자바로 배우는 리팩토링 입문</mark>, <mark>자바와 JUnit을 활요한 실용주의 단위 테스트</mark>,
   <mark>리팩토링 2판</mark>, <mark>Unit Testing</mark> 책을 읽으며 develop 하고 있습니다. 
 
 content:
-  - title: Projects # Title for the section
+  - title: 경험 # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+        - layout: left
+          title: IMS Mobility
+          link: imsmobility.co.kr
+      # link_text: boringcompany.com
+          sub_title: 백엔드 서버 개발자
+          caption: 2021.07 ~ 현재
+          quote: >
+              B2B 차량 이용, 관리 및 관제 서비스 Solution 서비스
+          description: | # this will include new lines to allow paragraphs
+            - 테스트 코드, 코드리뷰 개발환경 개선
+            - 테스트 코드 CI 도입 - <mark>GitAction, TestContainer 사용</mark>
+            - 어드민 페이지 유지보수 및 개발 
+            - Installer( 설치자 앱 ) 유지보수 및 개발 - <mark>설치이력 조회 시 여러 테이블 조인 쿼리에서 서브 쿼리로 변경 후 1.5초 → 0.9초 개선</mark>
+            - [Bulk 엑셀 차량 등록 개발](https://jj-yi.tistory.com/62?category=936567) - <marK>등록 속도 1.7초 → 0.2초 개선</mark>
+        - layout: left
+          title: 항해99 참여
+          link: hanghae99.spartacodingclub.kr
+          sub_title: 취업준비
+          caption: 2021.03 ~ 05
+          quote: >
+            개발자 부트캠프
+          description: | # this will include new lines to allow paragraphs
+            - 미니프로젝트와 실전프로젝트 진행
+            - Spring 클론코딩으로 Security 및 오픈 API 호출하는 기술을 익힘.
+            - 여러사람들과 팀을 변경하면서 협업하는 연습진행
+        - layout: left
+          title: 뉴욕 인턴쉽
+          link:
+          sub_title: 뉴욕 월드트레이더 센터에서 부동산 회사
+          caption: 2019.12 ~ 2020.02
+          quote: >
+            교내 우수 성적 인턴쉽 프로젝트
+          description: | # this will include new lines to allow paragraphs
+            - 프로젝트 리더 겸임, 프로젝트 초기 설계 구축
+            - 뉴욕 월드트레이더 센터에서 부동산 회사의 인턴
+            - 미국 웹사이트에서 부동산 관련 정보를 스크래핑하는 프로그램 개발
+            - Python, tor 라이브러리 사용
+        - layout: left
+          title: 산학협력 개발
+          link: www.lineworld.co.kr
+          sub_title: 교내에서 주최하는 국가산업 협력 개발(연구실 유해물질 측정) 참여
+          caption: 2019.06 ~ 08
+          quote: >
+            국가산업 협력 개발
+          description: | # this will include new lines to allow paragraphs
+            - 유해물질을 측정하여 그래프로 측정량을 볼 수 있게 인터페이스 구현
+            - CCTV를 실시간으로 볼 수 있게 구현 및 현재 스트리밍되는 비디오를 NAS에 저장할 수 있게 프로젝트 개발
+
+
+  - title: 프로젝트
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: SFlash(Picture Spot)
+        link: github.com/JangHyeonJun2/picturespot
+        caption: 2021.04 ~ 05
         # link_text: Project Website
         additional_links:
           - title:  sproogen/modern-resume-theme
@@ -71,48 +124,161 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          지도와 함께 자신만의 스팟을 저장하고 공유하는 서비스<br><br>
+          ✔︎ HTTPS를 사용하면서 보안강화<br>
+          ✔ 게시물, 댓글 CRUD, 좋아요, 취소, 검색 기능구현<br>
+          ✔ 기존 FileZila 배포 → travis, s3, CodeDeploy 사용<br>
+              - <marK>무중단 CI/CD 구현</mark><br>
+          ✔ JPA 폐치조인을 사용하여 API 응답호출 최적화.<br>
+              - SELECT 쿼리 <marK>1.1초 → 0.9 ~ 1초 개선 </mark><br>
+          ✔ AWS s3 를 사용하여 이미지 List 업로드 및 삭제 개발<br>
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-  - title: Experience # Title for the section
+      - layout: top-middle
+        title: Hanghae_Market
+        link: github.com/JangHyeonJun2/hanghae99_market
+        caption: 2021.04 ~ 04
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          중고 물건을 사고, 팔 수 있는 중고거래장터 프로젝트<br><br>
+          ✔︎ Socket 통신을 사용해서 1:1 대화기능 설계<br>
+          ✔︎ 채팅DB 설계<br>
+          ✔︎ STOMP 메세징 프로토콜 사용<br>
+          ✔︎ FileZila 프로그램으로 배포<br>
+        description: | # this will include new lines to allow paragraphs
+
+      - layout: top-middle
+        title: 당근마켓 클론코딩
+        link: github.com/JangHyeonJun2/CloneCoding_danggeon
+        caption: 2021.04 ~ 04
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          당근마켓을 벤치마킹하여 클론코딩 프로젝트<br><br>
+          ✔︎ Socket 통신을 사용해서 1:1 대화기능 설계<br>
+          ✔︎ 채팅DB 설계<br>
+          ✔︎ STOMP 메세징 프로토콜 사용<br>
+          ✔︎ FileZila 프로그램으로 배포<br>
+        description: | # this will include new lines to allow paragraphs
+
+      - layout: top-middle
+        title: 부동산 정보 스크래핑 프로그램
+        link: github.com/JangHyeonJun2/python_web_scrapper
+        caption: 2019.12 ~ 2020.01
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Python과 tor 라이브러리를 사용하여 특정 브라우저 정보 스크래핑 프로그램<br><br>
+          ✔︎ 특정 브라우저에서 스크래핑 지속적인 시도 시 ip블럭킹 되는 문제를 tor 라이브러리를 사용 <mark>(계속해서 ip주소가 변경되서 블럭킹을 피할 수 있음)</mark><br>
+        description: | # this will include new lines to allow paragraphs
+
+      - layout: top-middle
+        title: 교내 캡스톤
+        link: github.com/JangHyeonJun2/Capstone-Design_woosong
+        caption: 2019.09 ~ 12
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          교내 캡스토 디자인 대회에서 은상 수상<br><br>
+          ✔︎ 라즈베리파이로 주차장 현황 LCD표출<br>
+          ✔︎ 카카오 챗봇으로 주차장의 빈자리를 말해주는 프로그램 개발<br> 
+          ✔︎ T자 주차와 평행주차를 할 수 있는 프로그램 개발 → <mark>근거리 센서를 사용하여 개발</mark><br>
+        description: | # this will include new lines to allow paragraphs
+
+  - title: 교육 # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        title: ATTD , 클린코드 with Spring 5기 with NEXTSTEP
+        caption: 2022.07 ~
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          ATTD와 함께 클린 API로 가는 길
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          - 평소에 클리코드와 클린아케텍쳐, TDD에 관심이 많아서 참여
 
-  - title: Education # Title for the section
+      - layout: left
+        title: DevOps 구축 부트캠프 4기 with FastCampus
+        caption: 2020.02 ~ 04
+        quote: >
+          인프라 구축을 위한 FastCampus DevOps 교육
+        description: | # this will include new lines to allow paragraphs
+          - VM과 docker 배포의 차이점 알아보기
+          - kubernate 교육
+
+      - layout: left
+        title: Java 웹 프로그래밍 마스터 with FastCampus
+        caption: 2018.09 ~ 11
+        #        sub_title: (수료증)[https://drive.google.com/file/d/1ssTmAnSi9Y46P30zmBc-EP9rauw9zNXT/view?usp=sharing]
+        quote: >
+          Java SpringFrameWork의 교육, Web에 대한 지식, 프로젝트 설계 방법 교육
+        description: | # this will include new lines to allow paragraphs
+          - SpringFrameWork의 내부원리 이해와 실무 프로젝트를 경험하기 위해 참여 
+          - SpringBoot 기반의 웹 애플리케이션 개발
+
+  - title: 스킬 # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        title: Backend
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          - Java, Python
+          - Spring Boot, Spring Security, Spring Data JPA, 
+          - JPA, Hibernate
+          - Junit, Mockito
+          - Maven, Gradle
+          - Intelij, VSC
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: FrontEnd
+        description: | # this will include new lines to allow paragraphs
+          - React, JS, HTML, CSS
 
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      - layout: left
+        title: DevOps
+        description: | # this will include new lines to allow paragraphs
+          - MySQL, MariaDB
+          - Travis CI, AWS CodeDeploy, GitAction
+          - RDS, S3, EC2
+          - Nginx
 
-      Look at this cool image  
+
+
+
+#  - title: A Little More About Me
+#    layout: text
+#    content: | # this will include new lines to allow paragraphs
+#      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+#      - Rock climbing
+#      - Gaming
+#      - Knitting
+#      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+#
+#      Look at this cool image
 #      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
