@@ -84,6 +84,28 @@ content:
             - 미니프로젝트와 실전프로젝트 진행
             - Spring 클론코딩으로 Security 및 오픈 API 호출하는 기술을 익힘.
             - 여러사람들과 팀을 변경하면서 협업하는 연습진행
+        - layout: left
+          title: 뉴욕 인턴쉽
+          link:
+          sub_title: 뉴욕 월드트레이더 센터에서 부동산 회사
+          caption: 2019.12 ~ 2020.02
+          quote: >
+            교내 우수 성적 인턴쉽 프로젝트
+          description: | # this will include new lines to allow paragraphs
+            - 프로젝트 리더 겸임, 프로젝트 초기 설계 구축
+            - 뉴욕 월드트레이더 센터에서 부동산 회사의 인턴
+            - 미국 웹사이트에서 부동산 관련 정보를 스크래핑하는 프로그램 개발
+            - Python, tor 라이브러리 사용
+        - layout: left
+          title: 산학협력 개발
+          link: www.lineworld.co.kr
+          sub_title: 교내에서 주최하는 국가산업 협력 개발(연구실 유해물질 측정) 참여
+          caption: 2019.06 ~ 08
+          quote: >
+            국가산업 협력 개발
+          description: | # this will include new lines to allow paragraphs
+            - 유해물질을 측정하여 그래프로 측정량을 볼 수 있게 인터페이스 구현
+            - CCTV를 실시간으로 볼 수 있게 구현 및 현재 스트리밍되는 비디오를 NAS에 저장할 수 있게 프로젝트 개발
 
 
   - title: Project
