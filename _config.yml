@@ -51,7 +51,7 @@ about_content: | # this will include new lines to allow paragraphs
  Java, Srping, AWS 기반의 1년차 백엔드 개발자입니다. 비즈니스 기능 개선, 어드민 페이지 개발, 유지보수 업무를 하였습니다. 
  현재는 OBD 통신으로 차량의 데이터를 가져와 차량관제, 차량제어, 운전자 운행 습관들을 제공하는 서비스를 개발 및 설계, 기능 개선을 주요 업무로 하고 있습니다.<br>
  클린한 코드와 개발 효율성을 중요하게 생각하며, 자동화에 관심이 많습니다. 코드 문제에 대해서는 집요하게 해결방법을 도출해내는 성격입니다. <br>
- <mark>테스트 코드</mark>와 <mark>코드리뷰</mark>를 당연시하며, 현 회사의 테스트 커버리지를 <mark>%</mark> 에서 <mark>%</mark>로 증가시켰으며, 모든 모듈의 테스트 자동화를 하였습니다. 
+ <mark>테스트 코드</mark>와 <mark>코드리뷰</mark>를 당연시하며, 현 회사의 테스트 커버리지를 <mark>50%</mark>까지 끌어올렸으며, 모든 모듈의 테스트 CI 자동화를 적용하였습니다. 
   현재는 테스트코드 작성과 코드리뷰를 정착시키고 있으며, 관련 서적 <mark>자바로 배우는 리팩토링 입문</mark>, <mark>자바와 JUnit을 활요한 실용주의 단위 테스트</mark>,
   <mark>리팩토링 2판</mark>, <mark>Unit Testing</mark> 책을 읽으며 develop 하고 있습니다. 
 
@@ -72,7 +72,7 @@ content:
             - 테스트 코드 CI 도입 - <mark>GitAction, TestContainer 사용</mark>
             - 어드민 페이지 유지보수 및 개발 
             - Installer( 설치자 앱 ) 유지보수 및 개발 - <mark>설치이력 조회 시 여러 테이블 조인 쿼리에서 서브 쿼리로 변경 후 1.5초 → 0.9초 개선</mark>
-            - [Bulk 엑셀 차량 등록 개발](https://jj-yi.tistory.com/62?category=936567) - <marK>등록 속도 1.7초 → 0.2초 개선</mark>
+            - [Bulk 엑셀 차량 등록 개발](https://jj-yi.tistory.com/62?category=936567) - <marK>등록 속도 1.7초 → 0.2초로 개선</mark>
         - layout: left
           title: 항해99 참여
           link: hanghae99.spartacodingclub.kr
@@ -83,7 +83,7 @@ content:
           description: | # this will include new lines to allow paragraphs
             - 미니프로젝트와 실전프로젝트 진행
             - Spring 클론코딩으로 Security 및 오픈 API 호출하는 기술을 익힘.
-            - 여러사람들과 팀을 변경하면서 협업하는 연습진행
+            - 사람들과 팀을 변경하면서 협업 과정 및 소통방식을 연습
         - layout: left
           title: 뉴욕 인턴쉽
           link:
