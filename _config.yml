@@ -52,8 +52,8 @@ about_content: | # this will include new lines to allow paragraphs
  현재는 OBD 통신으로 차량의 데이터를 가져와 차량관제, 차량제어, 운전자 운행 습관을 제공하는 서비스 개발 및 설계, 기능 개선을 주요 업무로 하고 있습니다.<br>
  클린 코드와 개발 효율성을 중요하게 생각하며, 자동화에 관심이 많습니다. 코드 문제에 대해서는 집요하게 해결방법을 도출해내는 성격입니다. <br>
  <mark>테스트 코드</mark>와 <mark>코드리뷰</mark>를 당연시하며, 현 회사의 테스트 커버리지를 <mark>50%</mark>까지 끌어올렸으며, 모든 모듈의 테스트 CI 자동화를 적용하였습니다. 
-  현재는 테스트코드 작성과 코드리뷰를 정착시키고 있으며, 관련 서적 <mark>자바로 배우는 리팩토링 입문</mark>, <mark>자바와 JUnit을 활요한 실용주의 단위 테스트</mark>,
-  <mark>리팩토링 2판</mark>, <mark>Unit Testing</mark> 책을 읽으며 develop 하고 있습니다. 
+  현재는 테스트코드 작성과 코드리뷰를 정착시키고 있으며, 관련 서적 <mark>자바로 배우는 리팩토링 입문</mark> <mark>자바와 JUnit을 활요한 실용주의 단위 테스트</mark>
+  <mark>리팩토링 2판</mark> <mark>Unit Testing</mark> 책을 읽으며 develop 하고 있습니다. 
 
 content:
   - title: 경험 # Title for the section
